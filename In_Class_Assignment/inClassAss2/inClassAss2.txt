@@ -1,0 +1,11 @@
+this is my Answer for in class assignments 2
+Name:Jiaxuan Cao
+1. An ___inline___ element does not start on a new line. 
+2. Image files can be accessed _relative_____ to the html file. 
+3. The ____deflate__ algorithm for a PNG file is lossless. 
+4. The __from____ element gives you a set of input elements to collect data from your users.
+5. CSS makes __style____ rules for html elements. 
+6. More specific ___selectors___ (such as using an ID instead of a class) will take precedence over less specific __selectors____. 
+7. HTML treats every element as living in its own _box_____. 
+8. Specifying auto as the second parameter of margin basically tells the browser to automatically determine the left and right margins itself, which it does by setting them _equal_. 
+9. The __padding____ property allows you to specify how much space should appear between the content of an element and its border. 
