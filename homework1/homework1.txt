@@ -10,7 +10,7 @@
     The next section is the school's promotional movie, with the title and description on the right side. Below this section is Fordham Events, which uses different colored boxes to indicate different days. The boxes contain the date, event name and location. 
     Users can also click on the boxes to get more information. It has two arrows in the top right hand corner which allow the user to switch between different dates.
     The last column has the school's name and slogan, as well as links to other social media outlets. The last column has the school's name and slogan, as well as links to other social media outlets, giving the user a variety of options. On the right hand side there is
-4. An HTML element is a collection of start and end tags with the content inserted between them.
+4. An HTML element is a collection of start and end tags with the content inserted between them. It usually define and structure content on a web page. 
     HTML uses tags (characters that sit inside angled brackets) to give the information they surround with special meaning. 
     Attributes provide additional information about the contents of an element.
 5.selectorsthat specify the elements the rule applies to
@@ -25,7 +25,7 @@
 7. <img src = “../images/pinecone.jpg” alt = “Pinecone”/> 
 
 8.What is the default behavior when submitting a HTML form? 
-    Depends on method attribute of the form element.Get and Post. Form will send data to the server.
+   from will be sent to URL of current page
 9 see BerkshireHathaway.HTML
 
 10. see threediv.HTML

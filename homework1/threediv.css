@@ -1,0 +1,19 @@
+#leftbox {
+    background-color: red;
+    width:100px;
+    height:100px;
+    float:left;
+}
+
+#middlebox {
+    background-color:yellow;
+    width:100px;
+    height:100px;
+    float:left;
+}
+#rightbox {
+    background-color:blue;
+    width:100px;
+    height:100px;
+    float: left;
+}
