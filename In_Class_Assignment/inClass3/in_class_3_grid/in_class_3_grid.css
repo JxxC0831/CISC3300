@@ -1,0 +1,25 @@
+html, body {
+    height:100%;
+}
+
+.grid_container {
+    height:100%;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.grid_item_1 {
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.grid_item_2 {
+    background-color: green;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}

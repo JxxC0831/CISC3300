@@ -1,0 +1,7 @@
+1. The _____color___ property allows you to specify the color of text inside an element. 2. ___Typography_____ can be defined as “the art and technique of arranging type in order to make language visible”. 
+3. The ___object fit____ CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container. 
+4. The __position_____ CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+5. Beyond positioning elements we also have access to _CSS_layout system___ which set rules and standards for how a layout should flow and position elements in a more systematic way. 
+6. CSS Flexible Box Layout, commonly known as Flexbox, is a ___one____ dimensional CSS web layout model. 
+7. CSS Grid is a ____two___ dimensional CSS web layout model. 
+8. A _CSS framework______ is a collection of CSS stylesheets that are prepped and ready to use.
