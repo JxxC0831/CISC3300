@@ -1,0 +1,33 @@
+1. HTML stands for Hypertext markup language. It creates the structure of website and gives users functionality with which to interact. 
+2. CSS stands for Cascading Style Sheets. It controls the visual aspect of web pages and HTML
+3.  The header of a web page includes several simple but commonly used features. For example, Log in for students. 
+    For first-time visitors who want to find out information about students and staff, the “Information for” menu allows the user to go further and select which people they want to find out information about from “Student,” “Faculty, Staff,” “Family,” “Alumni,” etc. 
+    The header also allows the user to select which people they want to find out information about. For those applying for the first time, "Apply" is very visible. The information in the header is very concise and frequently used, with no extraneous content. Users can quickly find their way around.
+    The top left corner of the homepage features the school's logo, and on the right side there is a series of navigation bars. When the user wants to know the content of a particular navigation bar, just hover the mouse over it to reveal more specific menus. On the far right of the row there is a bolded search with a magnifying glass icon. 
+    This allows the user to search for information directly.
+    Next is a background of photos of the school, which changes over time. The top side shows the latest campus news. The news is accompanied by a small introductory picture and a headline, as well as its associated subject. 
+    The web page provides campus addresses for students in different locations. For those who want to apply to or learn about schools closer to them, when they click on the names of the different campuses they will be taken to a more detailed campus homepage.
+    The next section is the school's promotional movie, with the title and description on the right side. Below this section is Fordham Events, which uses different colored boxes to indicate different days. The boxes contain the date, event name and location. 
+    Users can also click on the boxes to get more information. It has two arrows in the top right hand corner which allow the user to switch between different dates.
+    The last column has the school's name and slogan, as well as links to other social media outlets. The last column has the school's name and slogan, as well as links to other social media outlets, giving the user a variety of options. On the right hand side there is
+4. An HTML element is a collection of start and end tags with the content inserted between them.
+    HTML uses tags (characters that sit inside angled brackets) to give the information they surround with special meaning. 
+    Attributes provide additional information about the contents of an element.
+5.selectorsthat specify the elements the rule applies to
+    Declarations that indicate what these elements should look like
+
+6. First considering important rules.
+    next is evaluates specificity, with more specific rules overriding less specific ones.
+    If specificity is the same, we use last rule.
+    Inheritance determines which style should be applied based on the parent-child relationship between elements.
+    Styles applied to a parent element will be inherited by its child elements unless overridden by a more specific style
+
+7. <img src = “../images/pinecone.jpg” alt = “Pinecone”/> 
+
+8.What is the default behavior when submitting a HTML form? 
+    Depends on method attribute of the form element.Get and Post. Form will send data to the server.
+9 see BerkshireHathaway.HTML
+
+10. see threediv.HTML
+
+
