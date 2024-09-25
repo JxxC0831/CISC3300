@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Question 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             .flexContainer {
                 display: flex;
+                flex-direction: row;
             }
 
             .flexContainer1 {
@@ -27,9 +29,9 @@
 
             /*
             for screen < 500px, flow vertically.
-            for screen >= 500p, flow horizontally.
-            */
-            @media screen and (max-width: 499px) {
+            for screen >= 500px, flow horizontally.
+            */ 
+            @media only screen and (max-width: 500px) {
                 .flexContainer {
                     flex-direction: column;
                 }

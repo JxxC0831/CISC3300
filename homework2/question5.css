@@ -34,11 +34,11 @@ body {
     text-align: center;
     vertical-align: middle;
     font-weight: 600;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
     width:220px;
-    font-size: 1.125rem;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 4rem 4rem;
+    padding: 64px 64px;
 
 }
 h1 {
@@ -57,7 +57,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: normal;
 }
 
@@ -67,14 +67,17 @@ p {
     font-weight: 400;
 }
 
+.flexboxforTextandImg {
+    display: flex;
+    align-items: flex-start;
+}
+
 .CSIMGcontainer {
-    display:flex;
-    float:right;
     width: 200px;
     height: auto;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
+   
 }
-
-
 
