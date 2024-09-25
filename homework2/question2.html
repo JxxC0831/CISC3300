@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+        <style>
+            .flexContainer {
+                display: flex;
+            }
+
+            .flexContainer1 {
+                background-color: red;
+                width: 100px; 
+                height: 100px;
+            }
+
+            .flexContainer2 {
+                background-color: blue;
+                width: 100px; 
+                height: 100px;
+            }
+
+            .flexContainer3 {
+                background-color: green;
+                width: 100px; 
+                height: 100px;
+            }
+
+            /*
+            for screen < 500px, flow vertically.
+            for screen >= 500p, flow horizontally.
+            */
+            @media screen and (max-width: 499px) {
+                .flexContainer {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flexContainer">
+            <div class="flexContainer1">Flex Container 1</div>
+            <div class="flexContainer2">Flex Container 2</div>
+            <div class="flexContainer3">Flex Container 3</div>
+        </div>
+    </body>
+</html>

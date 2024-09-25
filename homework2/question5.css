@@ -1,0 +1,80 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leftsidecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-right: 1px solid #e7ebe7;
+    padding: 2rem 4rem 2rem 8rem;
+
+}
+
+.moreInfoBar {
+    background-color: grey;
+    padding:1rem 1rem 1rem 0.5rem;
+    margin-right: auto;
+}
+
+.MajorsandMinorsButton {
+    background-color: rgb(128, 23, 42);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width:220px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+
+.rightsidecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 4rem 4rem;
+
+}
+h1 {
+    color:rgb(132, 24, 43);
+    font-weight: 300;
+    font-size: 50px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.p1 {
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.CSIMGcontainer {
+    display:flex;
+    float:right;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+

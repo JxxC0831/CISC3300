@@ -1,0 +1,4 @@
+3. Compare and contrast Flexbox and CSS grid, how are they alike and how are they
+different?
+CSS Flexbox and CSS grid are both a method of layout in CSS. They allowed us to create a certain layout for a website. 
+However, CSS Flexbox is a 1-dimensional layout either a row or a column. CSS grid is a 2-demensional layout that put rows and columns together.
