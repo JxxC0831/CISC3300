@@ -1,0 +1,21 @@
+1. Javascript is a lightweight programming language commonly used by web developers to add dynamic interactions to web pages, applications, servers, and even games. 
+2. 
+Dynamic typing: type checking is performed at runtime, means that the type of a variable is allowed to change over its lifetime.
+statically typed language checks types at compile time before the code runs
+Weak typed: recognizes different data types(numbers, strings, etc.) but doesn’t use them too strictly, trying to convert data when it seems reasonable
+Strongly typed: A strongly typed language enforces that when a variable is declared, 
+it is assigned a type (explicitly or implicitly), and for the duration of the variable's lifecycle, it will continue to have that type and only that type. 
+
+3. 
+Var is very old school. Always use in global and function scope. redeclarable
+Let is block scoped local variable. Can be redeclared.
+Const is block scoped local variable. Cannot be redeclared.
+
+4. An anonymous function is a function without a name
+Higher-order functions: function that returns a function or takes other functions as arguments is called
+Callback functions: passed as an argument to another function to be called later
+First-class functions: if functions in that language are treated like other variables
+
+5. An object is non primitive data type and is a collection of properties, 
+The property is an association between a name (or key) and a value. 
+
