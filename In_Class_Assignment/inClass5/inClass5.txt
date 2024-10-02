@@ -3,4 +3,4 @@
 3. HTML events are  _“things”_______ that happen to HTML elements. 
 4. ___addEventListener()____ sets up a function that will be called whenever the specified event is delivered to the target. 
 5. __jQuery______ takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
-6. The __.val()______ function grabs the value of inputs in jQuery. 
+6. The __.val()____ function grabs the value of inputs in jQuery.
