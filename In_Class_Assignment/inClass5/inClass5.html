@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Class 5</title>
+        <style>
+            .container-color{
+                color: blue;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            window.addEventListener('load',function(e) {
+                const containerDiv = document.getElementById('container');
+                const textNode = document.createTextNode('in class 5');
+                containerDiv.appendChild(textNode);
+                containerDiv.classList.add('container-color'); 
+            
+                const buttonElement = document.getElementById('event-button');
+
+                buttonElement.addEventListener('click', function(){
+                const appendDiv = document.createElement('div');
+
+                const appendDivText = document.createTextNode('new text');
+
+                appendDiv.appendChild(appendDivText);
+
+                containerDiv.appendChild(appendDiv);
+                });
+            });
+
+            $(document).ready(function() {
+                $('#container').text('in class 5').attr('class', 'container-color');
+                $('#event-button').click(function() {
+                    $('#container').append('<div>new text</div>');
+                });
+            })
+
+        </script>
+    </head>
+    
+    <body>
+        <div id = "container"></div>
+        <button id = "event-button">Click Me</button>
+        
+    </body>
+</html>
