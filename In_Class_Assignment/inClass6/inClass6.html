@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Class 6</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+        <p>Recipes<p>
+        <script>
+            $.ajax({
+                url: 'http://localhost:3000/recipes',
+                method: "GET",
+                success: function (data) {
+                    console.log("Fetched Recipes:",data);
+                },
+                error: function (xhr,status, error) {
+                    console.log("Error:", error);
+                }
+            });
+        </script>
+    </body>
+</html>
