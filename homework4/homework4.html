@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 4</title>
+        <script src = "cats.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            .error-message {
+                background-color: red;
+            }
+            .success-message {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!--question 6-->
+        <ul id="ul">
+            <li class="list_item">Apple</li>
+            <li class="list_item">Banana</li>
+            <li class="list_item">Cherry</li>
+            <li class="list_item">Dragonfruit</li>
+            <li class="list_item">Kiwi</li>
+        </ul>
+        <!--question 7-->
+        <ul id="cats-list">
+
+        </ul>
+
+        <!--question 8-->
+        <form id = "form_id">
+            <label for = "value">Enter value:</label>
+            <input type = "text" id = "textInput" name = "textInput">
+            <button type = "submit">Submit</button>
+        </form>
+
+        <div id = "message"></div>
+
+
+        <!--scri-->
+        <script>
+            //question 6
+            const listItems = document.querySelectorAll('#ul li');
+            listItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+            listItems.forEach(function(li) {
+            li.style.color = 'blue';
+                    });
+                });
+            });
+            //question 7
+            const catsList = document.getElementById('cats-list');
+            cats.forEach(function(cat) {
+                const li = document.createElement('li');
+                li.textContent = cat.name;
+                catsList.appendChild(li);
+            });
+
+            //question 8
+            const newForm = $('#form_id')
+            newForm.on('submit', function (e) {
+                e.preventDefault();
+                var newText = $('#textInput').val();
+                console.log(newText)
+                //clear the message
+                $('#message').empty();
+
+                //display success or error message
+                if (newText.trim() === '') {
+                $('#message').html('<div class="error-message">Please Provide a Value</div>');
+                } 
+
+                else {
+                $('#message').html('<div class="success-message">Success</div>');
+                }
+                
+
+            });  
+
+        </script>
+    </body>
+</html>

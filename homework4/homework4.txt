@@ -1,0 +1,16 @@
+CISC 3300 SP24 
+Homework 4 
+1. What is the DOM? What is meant by the DOM tree? 
+Document Object Model (DOM) specifies how browsers should create a model of an HTML page and how JavaScript can access and update the contents of a web page while it is in the browser window. As a browser loads a web page, it creates a model of that page. The model is called a DOM tree, and it is stored in the browsers' memory.
+2. What is an XSS attack? How do they work? How can you guard against them? 
+XSS stands for Cross-Site Scripting Attacks. It happens If a malicious user adds code to an input that is eventually generated as html, that code could potentially be run for different users. We should be very careful with what content we treat as HTML. It should very rarely have the option to show input that came from a user. If it must there are options to validate that input, strip it of potential malicious intent by removing tags, escaping characters, etc
+
+3. What is an event in JavaScript? 
+HTML events are "things" that happen to HTML elements.
+
+4. How does a DOM eventListener work? What are the parameters it is expecting? 
+Event listeners are a more recent approach to handling events. They can deal with more than one function at a time. Event listeners set up a function that will be called whenever the specified event is delivered to the target.
+Expecting type of event like click, or a function. 
+
+5. What is jQuery? Why use it? How do we load jQuery onto a page? 
+jQuery is a lightweight, "write less, do more", stands for JavaScript library The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish and wraps them into methods that you can call. jQuery is a JavaScript library designed to simplify HTML, DOM (Document Object Model) manipulation, event handling, CSS animations, and Ajax. At the time, the jQuery library shortened the syntax and simplified the code, making it easy to understand and increased web developer productivity. It makes our lives easier when doing common HTML/CSS/JS tasks. We will use a cdn(Content Delivery Network)
