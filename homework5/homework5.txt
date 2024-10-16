@@ -1,0 +1,40 @@
+CISC 3300 F24 
+Homework 5 
+1. What is HTTP? What are the different HTTP request methods and how do they differ? 
+Http stands for hyper text transfer protocol. HTTP is a protocol for fetching resources such as HTML documents or JSON data. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.
+
+GET - should only ever retrieve data
+POST - submits an entity to the specified resource, often causing a change in state or side effects on the server - usually creating a new resource
+PUT - method replaces all current representations of the target resource with the request payload - update everything for a resource
+PATCH - partially modify a resource - not really used much, put is more common for modifying resources
+DELETE - delete a resource
+
+2. What is an API? What is JSON? 
+API stands for application programming interface. It is a way for two or more computer programs or components to communicate with each other.
+JSON stands for JavaScript Object Notation. It is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute-value pairs and arrays (or other serializable values).
+
+
+3. What is AJAX? What is meant by asynchronous code? 
+AJAX stands for Asynchronous JavaScript And XML. It allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page. Asynchronous code allows code to run in the background without blocking the execution of other code. Basically code blocks to execute at a future point in time.
+
+4. What is REST and what are resources? If my application had a concept called posts and was designed in a RESTful way, what would the URI and HTTP request method be to:
+ a. retrieve multiple posts 
+URL: /posts
+HTTP: GET
+b. retrieve a single post 
+	URL: /posts/{id}
+	HTTP: GET
+c. save a post 
+	URl: /posts
+	HTTP: POST
+d. update a post 
+URL: /posts/{id}
+HTTP: PUT
+REST is not a protocol or a standard, but an architectural style of organizing our code so that requests act upon resources in a standardized way.
+Any information that can be named can be a resource: a document or image, a temporal service (e.g. “today’s weather in Los Angeles”), a collection of other resources, a non-virtual object (e.g., a person), and so on.
+In other words, any concept that might be the target of an author’s hypertext reference must fit within the definition of a resource.
+A resource is a conceptual mapping to a set of entities, not the entity that corresponds to the mapping at any particular point in time.
+
+5. Define hoisting and closures in JS. 
+	Hoisting is variables and functions within each execution context are created before they are executed.
+Closures are the ability of a function to remember the variables and functions that are declared in its outer scope.

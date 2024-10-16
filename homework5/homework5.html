@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeWork 5</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <head>Current Temperature In NYC</head>
+        <p>Temperature at 2 meters above ground: <span id="temperature"></span></p>
+
+        <script>
+            $.ajax({
+                url: 'https://api.open-meteo.com/v1/forecast?latitude=40.7143&longitude=-74.006&hourly=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FNew_York&forecast_days=1',
+                method: "GET",
+                success: function (data) {
+                    console.log("Fetched Weather:",data);
+                    if (data.hourly && data.hourly.temperature_2m) {
+                            const temperatureArray = data.hourly.temperature_2m;
+                            //get the current hour
+                            const currentHourIndex = new Date().getHours();
+                            const currentTemperature = temperatureArray[currentHourIndex];
+
+                            $('#temperature').text(currentTemperature);
+                        } else {
+                            $('#temperature').text('Unable to fetch data');
+                        }
+                },
+                error: function (xhr,status, error) {
+                    console.log("Error:", error);
+                    $('#temperature').text('Unable to fetch data');
+                }
+            })
+        </script>
+
+
+    </body>
+</html>

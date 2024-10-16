@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw5 App</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            h1 {
+                color: blue;
+            }
+            h2 {
+                color: green;
+            }
+            #recipe-list {
+                color: red;
+                padding: 15px;            
+                margin: 10px 0;
+            }
+            #form-id {
+                padding: 15px;
+                margin: 10px 0;
+                border: 1px solid black;
+            }
+            label {
+                color: gray;
+            }
+            .button {
+                margin-top: 10px;          
+                border: none;            
+                border-radius: 3px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Recipes</h1>
+        <ul id="recipe-list"></ul>
+        <h2>Add new recipes</h2>
+        <form id="form-id">
+            <label>Title:</label><br>
+            <input type="text" id="title-input" name="title" required>
+            <br>
+            <label>Description:</label><br>
+            <input type="text" id="description-input" name="description" required><br>
+
+            <div class = "button"><button type="submit">submit</button></div>
+        </form>
+        <script>
+            $.ajax({
+                url: 'http://localhost:3000/recipes',
+                method: "GET",
+                success: function (data) {
+                    console.log("Fetched Recipes:",data);
+                    $('#recipe-list').empty();
+                    data.forEach(recipe => {
+                        $('#recipe-list').append(`<li>${recipe.title} - ${recipe.description}</li>`);
+                    });
+                },
+                error: function (xhr,status, error) {
+                    console.log("Error:", error);
+                }
+            });
+
+            $('#form-id').submit(function(e){
+                e.preventDefault();
+                var title = $('#title-input').val();
+                var description = $('#description-input').val();
+                const data = {
+                    title: title,
+                    description: description
+                }
+                const serializedJSON = JSON.stringify(data);
+                $.ajax({
+                    url: 'http://localhost:3000/recipes',
+                    method: "POST",
+                    data: serializedJSON,
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                    title = $('#title-input').val('');
+                    description = $('#description-input').val('');
+                    }, 
+                    error: function (xhr,status, error) {
+                        console.log("Error:", error);
+                    }        
+                });
+            });
+        </script>
+    </body>
+</html>
