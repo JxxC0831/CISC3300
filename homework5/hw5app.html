@@ -76,8 +76,9 @@
                     dataType: "json",
                     success: function (data) {
                         console.log(data);
-                    title = $('#title-input').val('');
-                    description = $('#description-input').val('');
+                        $('#recipe-list').append(`<li>${title} - ${description}</li>`);
+                        title = $('#title-input').val('');
+                        description = $('#description-input').val('');
                     }, 
                     error: function (xhr,status, error) {
                         console.log("Error:", error);
