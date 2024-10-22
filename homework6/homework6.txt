@@ -1,0 +1,27 @@
+1. What is PHP? What do server-side languages do in web development? 
+PHP stands for Hypertext Preprocessor"
+it is an interpreted programming language used to build webpages 
+Server-side scripting languages process user input and interact with other servers
+
+2. What are some examples of how PHP and JavaScript are alike and how they differ? 
+Paradigms: JaveScript operates on an event-driven model, particularly evident in browser environments where user interactions like licks or keypresses trigger functions
+PHP started as a procedural language, and many of its foundational features are based on this paradigm, allowing linear task execution.
+JaveScript has prototype-based OOP, objects can inherit directly from other objects, PHP has object-oriented programming.
+Memory management: JavaScript employs a garbage collection to automatically reclaim memory from objects that are no longer in use. Prevent memory leaks and ensure efficient use of system resources. PHP uses a hybrid approach. Primarily, it employs reference count drops to zero, its memory is freed. PHP introduced a garbage collector to handle cyclic references, ensuring that even circular references are cleared out. 
+Type System
+JavaScript:Dynamically Typed: Variables in JavaScript are not bound to a specific data type. A variable can contain a string and later be assigned a number or an object, offering flexibility but also requiring careful handling to prevent type-related errors.
+PHP: Mixed Typing: Traditionally, PHP is dynamically typed, much like JavaScript. However, with PHP 7 and later versions, type declarations were introduced, enabling developers to specify types for function arguments, return values, and class properties, thereby bringing in a blend of dynamic and static typing.
+
+3. Why pick PHP over another server side scripting language? 
+PHP has several useful built-in pieces of functionality too. It’s also easy to learn and widely used. 
+
+4. What’s the difference between the include and require keywords in PHP? 
+a. What would happen if you tried to use a variable from a file that hasn’t been included yet? 
+The include(or require) statement takes all the text/code/markup that exists in the specified file and copies it into the file that uses the include statement 
+In the include, if the file isn’t found, include will throw and error but keep going
+In the require, it will stop
+PHP will give an undefined variable error and stop.
+
+5. Compare and contrast echo and var_dump. 
+echo: Used to output strings, numbers, or variables to the browser. It can take multiple parameters but doesn't return a value.
+var_dump: Displays structured information (type and value) about one or more variables. It can handle complex types such as arrays or objects and is commonly used for debugging purposes, as it prints out detailed information including non-primitive values.
