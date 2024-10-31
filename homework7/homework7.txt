@@ -1,0 +1,40 @@
+1. What is a class? What is an object? What is OOP? 
+Class is a template for creating objects. we create an object we set it up with properties and define properties and methods 
+Object is an instance of a class. It is just like objects in js and a php variable for an object is a reference to the dynamic data, consisting of the data we set up with the class 
+OOP is Object-oriented programming, it contains inheritance, polymorphism and interface. 
+Inheritance in OOP = When a class derives from another class.
+Polymorphism allows objects of different classes to respond differently based on the same message
+interfaces, which are like abstract classes but more strict. In an interface every single method declared has to be implemented in the subclass
+
+
+2. Why use an abstract class in OOP? 
+Abstract class is a class that is not meant to be instantiated, only extended by children classes. Abstract classes/methods are generally used when a class provides some high level functionality but leaves out certain details to be implemented by derived classes. Abstract classes allow the parent to create defaults for methods
+3. What are superglobals in PHP, what are some examples of data they provide? 
+Superglobals mean they are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.
+4. What are the two steps to setting up and using a class via namespaces?
+step 1: Define a namespace it in the class to be used. 
+step 2: In the place we want to use the class we have two options
+ 5. What is MVC? Detail the different parts. 
+MVC is architectural/design pattern that separates an application into three main logical components Model, View, and Controller. 
+The Model component corresponds to all the data-related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic-related data. It can add or retrieve data from the database. It responds to the controller’s request because the controller can’t interact with the database by itself. The model interacts with the database and gives the required data back to the controller.
+The controller is the component that enables the interconnection between the views and the model so it acts as an intermediary. The controller doesn’t have to worry about handling data logic, it just tells the model what to do. It processes all the business logic and incoming requests, manipulates data using the Model component, and interact with the View to render the final output.
+The View component is used for all the UI logic of the application. It generates a user interface for the user. Views are created by the data which is collected by the model component but these data aren’t taken directly but through the controller. It only interacts with the controller.
+
+6. Create a class that has: 
+a. a constructor that sets some properties 
+b. getters and setters to set and return those properties 
+7. Add a static method to your class. 
+class Car {
+	private int $year;
+	private string $make;
+
+	public function __construct($year, $make) {
+        $this->year = $year;
+ 	    $this->make = $make;
+}
+
+    public static function staticMethod(){
+        echo 'this is static';
+    }
+
+}
