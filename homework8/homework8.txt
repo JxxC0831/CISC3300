@@ -1,0 +1,32 @@
+1. Write a query string with 2 values for www.example.com 
+www. example.com?name=Amy&address=NewYork
+
+2. What is meant by escaping a character? 
+Escaping means escaping it to make sure nothing is malicious 
+characters that would try to behave like code when we would not want them to. 
+
+3. What are the following HTTP status and their meanings: 
+a. 200: successful request, then the server returned the requested data.
+b. 400: bad request, the server could not understand the request due to incorrect syntax or malformed data sent by the client.
+c. 401: unauthorized. The request requires authentication to access the resource
+d. 403: forbidden. The server understands the request but is denying access to the resource, even if authenticated.
+e. 404: not found. The requested resource could not be found on the server.
+f. 500: internal serve error. An unexpected error occurred on the server while processing the request.
+
+4. Why do we need to validate data? 
+It helps us against XSS attacks.  
+
+5. What are sessions and cookies? What do they do? 
+Sessions:Sessions store information about a user and their preferences on the server. They are called sessions because they only store the data for the duration of a single visit to the site. 
+Cookies: a website can tell a browser to store data about the user in a text file called a cookie. Each time the browser requests another page from that domain, the browser sends the data in the cookie back to the server 
+
+
+6. Create some kind of expectation in a try block, throw an exception with a custom message in the catch block 
+try {
+    let number = 5;
+    if (number > 4) {
+        throw new Exception('Number is greater than 4');
+    }
+} catch (Exception $e) {
+    echo 'Caught error';
+}
