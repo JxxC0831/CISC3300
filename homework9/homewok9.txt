@@ -1,0 +1,85 @@
+Jiaxuan CAO HOMEWORK9
+1. What is SQL? MySQL? What are relational databases? 
+Structured query language (SQL) is a standard language for database creation and manipulation. 
+MySQL is a relational database program (one of many) that uses SQL queries. 
+A relational database uses a structure that allows us to identify and access data in relation to another piece of data in the database, these are called relationships.
+2. What is normalization in SQL? 
+Normalization organizes the columns and tables of a database to ensure that database integrity constraints properly execute their dependencies. It avoids duplication by using relationships. 
+3. What are primary and foreign keys? 
+A primary key is the field (or fields) that is used to uniquely identify each record in a table. 
+A foreign key is a field (or fields) in one table that references the primary key in another table. 
+
+4. What are the three relationship types? 
+One-to-one 
+For every record in the primary table, there is one and only one record in the foreign table.
+one faculty member has one single address 
+At least one foreign key set on either table 
+One-to-many 
+For every record in the primary table, there are one or more related records in the foreign table.
+one faculty member can have many courses assigned to them
+foreign keys on each of the foreign tables
+Many-to-many 
+For every record in the primary table, there are many related records in the foreign table, and for every record in the foreign table, there are many related records in the primary table.
+many students can be enrolled in many classes
+make use of a join table, a table that has both primary keys for the primary and foreign tables
+
+5. What is the difference between a left join and an inner join? 
+left join: The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table
+inner join: The INNER JOIN keyword selects records that have matching 
+
+CREATE DATABASE homework_9;
+CREATE TABLE `library` 
+(
+    `ID` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(80) NOT NULL,
+    PRIMARY KEY (`ID`)
+);
+CREATE TABLE `books` 
+(
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(80) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+CREATE TABLE `libraryBook` 
+(
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `libraryID` int(11) NOT NULL,
+    `bookID` int(11) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+INSER INTO library (name) VALUES
+('Walsh'),
+('Qunn');
+
+INSERT INTO books (name) VALUES
+('book1'),
+('book2'),
+('book3'),
+
+INSERT INTO libraryBook (libraryID, bookID) VALUES 
+(1, 1), 
+(1, 2), 
+(2, 3), 
+
+SELECT * FROM library WHERE ID = 1;
+
+SELECT * FROM books WHERE name LIKE 'Book%';
+
+SELECT * FROM books ORDER BY name;
+
+8. 
+SELECT 
+    library.name AS library_name,
+    books.name AS book_name
+FROM 
+    libraryBook
+JOIN library ON library.ID = libraryBook.libraryID
+JOIN books ON books.id = libraryBook.bookID;
+
+9. 
+UPDATA books
+SET name = 'Updated book 1'
+WHERE name = 'book1';
+
+10. 
+DELETE FROM books WHERE name = 'book3';
