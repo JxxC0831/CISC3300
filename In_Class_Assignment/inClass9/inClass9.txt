@@ -9,3 +9,4 @@
 9. errors or exceptions def 
 Error: messages that the PHP interpreter creates when it has a problem running code
 Exception: When code that would normally run is prevented from doing so, by an exceptional situation.
+Jaixuan
