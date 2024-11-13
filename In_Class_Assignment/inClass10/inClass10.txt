@@ -1,0 +1,10 @@
+1. Built in class that comes packaged with PHP to make it very easier for you to interact with databases is called _____PDOs___. 
+2. We instantiate PDO objects with __a DSN(Data source name)______ strings which represent the connection to our database 
+3. A ____.env____ file is a file containing environment variables. 
+4. A gitignore file is a text file that tells Git which files or folders to __git__ignore____ in a project, we will need git to ignore our .env file 
+5. The PDO query method takes as an argument a sql query and returns the results back as a PDO ___statement______ object which we can then get data out of. 
+6. From the PDO statement object we use the _____fetch()___ method to return a single row of the SQL result set. 
+7. From the PDO statement object we use the ____fechAll()____ method to return all rows of the SQL result set. 
+8. A ____prepared statements ____ is a parameterized and reusable SQL query which forces the developer to write the SQL command and the user-provided data separately. 
+9. We call the prepare method with a sql query with any dynamic parameters subbed in with names prefixed with ___colon____. 
+10. A __SQL injection______ is when a hacker tries to run malicious sql code in a database.
